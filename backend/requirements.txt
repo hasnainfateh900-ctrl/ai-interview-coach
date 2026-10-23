@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+sqlalchemy>=2
+psycopg[binary]
+pyjwt
+bcrypt
+anthropic
+pypdf
+python-multipart
+pydantic>=2
+pytest
+httpx
+pgvector
+pytest-cov

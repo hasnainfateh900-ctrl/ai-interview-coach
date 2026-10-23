@@ -1,0 +1,10 @@
+[
+ {"category":"technical","question":"How did you decide which PostgreSQL indexes to create?",
+  "answer":"I used PostgreSQL.","human":{"correctness":null,"depth":null,"clarity":null,"relevance":null}},
+ {"category":"technical","question":"How did you decide which PostgreSQL indexes to create?",
+  "answer":"I ran EXPLAIN ANALYZE on our slowest queries, saw sequential scans on orders.user_id, added a B-tree index, and p95 latency dropped from 420ms to 60ms. I skipped indexing low-cardinality columns because the planner ignored them.",
+  "human":{"correctness":null,"depth":null,"clarity":null,"relevance":null}},
+ {"category":"behavioral","question":"Tell me about a time you disagreed with a teammate.",
+  "answer":"We disagreed about the API design. I wrote a quick prototype of both options and we benchmarked them together; we went with mine and shipped a week early.",
+  "human":{"situation":null,"task":null,"action":null,"result":null}}
+]
